@@ -4,6 +4,9 @@
     <h2 class="mb-3">รหัสพนักงาน</h2>
     
     <!-- ตารางแสดงข้อมูลลูกค้า -->
+     <div class="text-end mb-3">
+      <a href="/Add_employee" class="btn btn-primary">Add+</a>
+     </div>
     <table class="table table-bordered table-striped">
       <thead class="table-dark">
         <tr>
@@ -63,7 +66,7 @@ export default {
     const fetchdata = async () => {
       try {
         // เรียก API (PHP)
-        const response = await fetch("http://localhost/week3_68700737/php.api/show_employee.php");
+        const response = await fetch("http://localhost/project-week3/php.api/show_employee.php");
 
         // ตรวจสอบว่าการเรียกสำเร็จหรือไม่
         if (!response.ok) {
