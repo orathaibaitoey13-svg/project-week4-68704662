@@ -66,7 +66,7 @@ export default {
     const fetchdata = async () => {
       try {
         // เรียก API (PHP)
-        const response = await fetch("http://localhost/project-week3/php.api/show_employee.php");
+        const response = await fetch("http://localhost/project-week4-68704662/php.api/show_employee.php");
 
         // ตรวจสอบว่าการเรียกสำเร็จหรือไม่
         if (!response.ok) {
